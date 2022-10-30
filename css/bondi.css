@@ -1,0 +1,127 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff0000;
+    --section-color: #e8e8e8;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-btn:hover {
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    top: 2px;
+    position: relative;
+    color: var(--red-color);
+}
+
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-title img {
+    width: 70px;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+/* Start Naverbar */
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar-brand:hover {
+    position: relative;
+    transform: rotate(5deg);
+    transition: 50ms ease-out;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar-nav .nav-link::selection {
+    display: none;
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+    border-right: 1px solid var(--green-color)
+}
+
+.navbar .search svg {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+}
+
+/* End Naverbar */
+/* Start Landing */
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+
+/* End Landing */
+
+/* Start features */
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+
+.features .info-holder {
+    color: #ea0d0db3;
+}
+
+.features .feat h4 {
+    color: #ff5858;
+}
+
+/* End features */
+/* Start Our Work */
